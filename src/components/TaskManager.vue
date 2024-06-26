@@ -1,7 +1,6 @@
 <template>
   <div class="container mt-5">
     <h1 class="mb-4">Task Manager</h1>
-
     <!-- Add Task Form -->
     <form @submit.prevent="addTask" class="mb-4">
       <div class="form-row">
@@ -22,7 +21,6 @@
         </div>
       </div>
     </form>
-
     <!-- Task List -->
     <ul class="list-group">
       <li v-for="task in tasks" :key="task.id" class="list-group-item">
@@ -103,8 +101,3 @@ export default {
   }
 };
 </script>
-
-
-<style scoped>
-/* Add some styles */
-</style>
