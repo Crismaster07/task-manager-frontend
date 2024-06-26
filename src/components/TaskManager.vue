@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <h1 class="mb-4">Task Manager</h1>
+    <h1 class="mb-4">My To-Do List</h1>
     <!-- Add Task Form -->
     <form @submit.prevent="addTask" class="mb-4">
       <div class="form-row">
