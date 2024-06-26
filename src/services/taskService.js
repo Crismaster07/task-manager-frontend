@@ -1,23 +1,19 @@
 import axios from 'axios';
 
-const apiClient = axios.create({
-  baseURL: 'http://localhost:3000',
-  headers: {
-    'Content-Type': 'application/json'
-  }
-});
+const API_URL = 'http://localhost:3000';
 
 export default {
   getTasks() {
-    return apiClient.get('/tasks');
+    return axios.get(`${API_URL}/tasks`);
   },
   addTask(task) {
-    return apiClient.post('/tasks', task);
+    return axios.post(`${API_URL}/tasks`, task);
   },
   updateTask(id, task) {
-    return apiClient.put(`/tasks/${id}`, task);
+    return axios.put(`${API_URL}/tasks/${id}`, task);
   },
   deleteTask(id) {
-    return apiClient.delete(`/tasks/${id}`);
+    return axios.delete(`${API_URL}/tasks/${id}`);
   }
 };
+
