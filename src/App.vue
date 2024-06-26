@@ -14,6 +14,7 @@ import AppNavbar from './components/Navbar.vue';
 import TaskManager from './components/TaskManager.vue';
 import AppFooter from './components/Footer.vue';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './global.css'; 
 
 export default {
   name: 'App',
